@@ -56,7 +56,7 @@ deploy {
                 }
 
                 register<FileTreeArtifact>("frcStaticFileDeploy") {
-                    files(project.fileTree("src/main/deploy"))
+                    files.set(project.fileTree("src/main/deploy"))
                 }
             }
         }
